@@ -1,4 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+/* latin */
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gloria Hallelujah'), local('GloriaHallelujah'), url(fonts/font.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 *{box-sizing: border-box;}
 
@@ -19,7 +26,7 @@ canvas {
   height: 552px;
   width: 422px;
   display: block;
-  background: url(http://i.imgur.com/Y0BMP.png) top left;
+  background: url(images/Y0BMP.png) top left;
 }
 
 #scoreBoard {
@@ -30,7 +37,7 @@ canvas {
   top: -3px;
   left: 0;
   z-index: -1;  
-  border-image: url(http://i.imgur.com/5BBsR.png) 100 5 round;
+  border-image: url(images/5BBsR.png) 100 5 round;
 }
 
 #scoreBoard p {
@@ -70,7 +77,7 @@ h3 a {color: #5a5816}
 .button {
   width: 105px;
   height: 31px;
-  background: url(http://i.imgur.com/2WEhF.png) 0 0 no-repeat;
+  background: url(images/2WEhF.png) 0 0 no-repeat;
   display: block;
   color:  #000;
   font-size: 12px;
@@ -90,7 +97,7 @@ h3 a {color: #5a5816}
 .info .key {
   width: 16px;
   height: 16px;
-  background: url(http://i.imgur.com/2WEhF.png) no-repeat;
+  background: url(images/2WEhF.png) no-repeat;
   text-indent: -9999px;
   display: inline-block;
 }

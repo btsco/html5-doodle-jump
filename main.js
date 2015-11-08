@@ -217,6 +217,7 @@ var spring = function() {
 };
 
 var Spring = new spring();
+var baseHeight = 0;
 
 function init() {
   //Variables for the game
@@ -338,7 +339,11 @@ function init() {
         player.vy += gravity;
       }
 
-      score++;
+      if (base.y > baseHeight) {
+        score++;
+      }
+
+      baseHeight = Math.max(base.y, baseHeight);
     }
 
     //Make the player jump when it collides with platforms
